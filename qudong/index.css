@@ -1,0 +1,191 @@
+*{ margin:0; padding:0; }
+ul,ol{ list-style:none;}
+a{ color:#666; text-decoration:none;}
+a img{ border:0; vertical-align:top; }
+i,em{ font-style:normal; }
+b,strong{ font-weight:normal; }
+input,textarea{ outline:none; }
+img,input,select,textarea{ vertical-align:top; }
+textarea{resize:none;}
+
+.fl{ float:left;display:inline;}
+.fr{ float:right;display:inline;}
+.clearFix:after{ display:block; content:''; clear:both;}
+.clearFix{ zoom:1;}
+
+html{ font-size:20px; }
+/*body{ margin-bottom:500px; }*/
+.warp{ width:15rem; margin:0 auto; }
+header{
+	height:2.2rem;
+	background:#d80202;
+	width:15rem;
+	padding:0 0.5rem;
+	border-bottom:0.1rem solid #c4b0bc;
+}
+header h1{
+	display:block;
+	background:url(img/驱动之家_01.jpg) no-repeat;
+	width:7.1rem;
+	height:2.2rem;
+	background-size:100%;
+	text-indent:-9999px;
+}
+header h1 a{
+	display:block;
+	height:100%;
+	width:100%;
+}
+header p{
+	font-size:0.75rem;
+	line-height:2.2rem;
+}
+header p a{
+	color:#fff;
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+nav{
+	height:1.675rem;
+	line-height:1.675rem;
+}
+nav ul{
+	height:1.25rem;
+	margin-top:0.15rem;
+}
+nav ul li{
+	line-height:1.25rem;
+	width:3rem;
+	font-size:0.75rem;
+	box-sizing:border-box;
+	text-align:center;
+}
+nav ul li a{
+	display:block;
+	height:100%;
+	width:100%;
+}
+nav ul li.on a{
+	border:0.05rem solid #b51a08;
+	color:#b51a08;
+}
+
+.banner ul li{
+	height:8rem;
+	width:16rem;
+}
+.banner ul li a{
+	display:block;
+	height:8rem;
+	width:16rem;
+}
+.banner ul li img{
+	height:8rem;
+	width:16rem;
+}
+
+.content ul li{
+	height:3.85rem;
+	border-bottom:0.05rem solid #ccc;
+}
+.content ul li p{
+	height:1.3rem;
+	line-height:1.3rem;
+	color:#272727;
+	font-size:0.75rem;
+	margin-top:0.7rem;
+	margin-bottom:0.6rem;
+	margin-left:0.8rem;
+}
+.content ul li p.on{
+	color:#88141d;
+}
+.content ul li div span{
+	font-size:0.65rem;
+	color:#bbbbbb;
+	margin-left:0.8rem;
+}
+.content ul li div em{
+	font-size:0.65rem;
+	color:#bbbbbb;
+	position:relative;
+	margin-right:2rem;
+}
+.content ul li div em strong{
+	display:inline-block;
+	background:url(img/驱动之家_07.jpg) no-repeat;
+	width:0.9rem;
+	height:0.85rem;
+	background-size:100%;
+	position:absolute;
+	top:0;
+	left:0.8rem;
+}
+
+.img_li ul{
+	margin-top:1.5rem;
+	margin-bottom:2.5rem;
+}
+.img_li ul li{
+	width:6.725rem;
+}
+.img_li ul li a{
+	display:block;
+	height:100%;
+	width:100%;
+}
+.img_li ul li.on{
+	margin-right:0.7rem;
+	margin-left:0.4rem;
+}
+.img_li ul li img{
+	width:5.975rem;
+	height:4.5rem;
+}
+.img_li ul li p{
+	font-size:0.625rem;
+	color:#6e6e6e;
+	margin-top:0.5rem;
+	height:1rem;
+	line-height:1rem;
+}
+
+footer {
+	height:2.1rem;
+	line-height:2.1rem;
+	text-align:center;
+}
+footer .foot_t a{
+	display:block;
+	height:100%; 
+	width:100%;
+	font-size:0.75rem;
+	color:#282828;
+	border-bottom:0.05rem solid #d7d7d7;
+}
+.foot_b{
+	background:#eeeeee;
+	height:4rem;
+}
+.foot_b ul{
+	width:10rem;
+	margin:0 auto;
+}
+.foot_b ul li{
+	font-size:0.7rem;
+	/*padding:0 0.625rem;*/
+}
+.foot_b ul li a{
+	padding:0 0.625rem;
+	color:#383838;
+	border-left:0.05rem solid #636363;
+}
+.foot_b ul li a.on{
+	border-left:none;
+}
+.foot_b p{
+	font-size:0.6rem;
+	color:#646464;
+}

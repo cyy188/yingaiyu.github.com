@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宜信-中国知名的个人信用管理和财富管理平台</title>
+<link href="css/common.css" rel="stylesheet"/>
+<link href="css/index.css" rel="stylesheet"/>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function(){
+	$(".a").mouseover(function(){
+		$('.a').removeClass('active');
+		$(this).addClass('active');
+	});
+	$(".a").mouseout(function(){
+		$(this).removeClass('active');
+	});
+	
+	// 轮播图事件
+	$(".banner p span").mouseover(function(){
+		var index = $(this).index();
+		$(".banner p span").removeClass("active");
+		$(this).addClass("active");
+		$(".banner-s img").removeClass("active-img-block");
+		$(".banner-s img").eq(index).addClass("active-img-block");
+		
+	});
+	
+	$('.bg ul li p span').mouseover(function(){
+		var aa=$(this).index();	
+		$(".bg ul li p span").removeClass("active");
+		$(this).addClass("active");
+		$(".bg-img img").removeClass("bg-block");
+		$(".bg-img img").eq(aa).addClass("bg-block");
+	});
+	
+	$(".bg ul li .bg-s .bg-s-r span a").mouseover(function(){
+		$(".bg ul li .bg-s .bg-s-r span a").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".bg ul li .bg-s .bg-s-r span a").mouseout(function(){
+		$(".bg ul li .bg-s .bg-s-r span a").removeClass("active");
+	});
+	
+	$(".bg ul li .bg-l .bg-bt a").mouseover(function(){
+		$(".bg ul li .bg-l .bg-bt a").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".bg ul li .bg-l .bg-bt a").mouseout(function(){
+		$(".bg ul li .bg-l .bg-bt a").removeClass("active");
+	});
+	
+	$(".bg ul .list .bg-n i a").mouseover(function(){
+		$(".bg ul .list .bg-n i a").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".bg ul .list .bg-n i a").mouseout(function(){
+		$(".bg ul .list .bg-n i a").removeClass("active");
+	});
+	
+	$(".food .food-s .food-t ul li a").mouseover(function(){
+		$(".food .food-s .food-t ul li a").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".food .food-s .food-t ul li a").mouseout(function(){
+		$(".food .food-s .food-t ul li a").removeClass("active");
+	});
+	
+	$(".pos img").click(function(){
+		
+		$(".posnone").addClass(".pos-block");
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="head">
+    <div class="head-s wrapper clearFix">
+        <p class="fl">
+            宜信<a href="javascript:;"></a>
+        </p>
+        <ul class="fr">
+            <li class="fl clearFix">
+            	<a class="fl a" href="javascript:;">宜信官方微博</a>
+                <span class="fr"></span>
+            </li>
+            <li class="fl">
+                <a class="fl a" href="javascript:;">招贤纳士</a>
+                <span class="fr"></span>
+            </li>
+            <li class="fl">
+                <a class="fl a" href="javascript:;">联系我们</a>
+                <span class="fr"></span>
+            </li>
+            <li class="fl">
+                <a class="fl a" href="javascript:;">ENGLISH</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nvs">
+    <div class="nvs-s wrapper">
+        <ul class="clearFix">
+            <li class="fl active">
+            	<a href="javascript:;">首页</a>
+            	<div></div>
+            </li>
+            <li class="fl">
+            	<a href="javascript:;">惠普金融</a>
+            	<div class="list-pos clearFix">
+                	1111111111111
+                </div>
+            </li>
+            <li class="fl"><a href="javascript:;">财富管理</a></li>
+            <li class="fl"><a href="javascript:;">宜信动态</a></li>
+            <li class="fl"><a href="javascript:;">社会责任</a></li>
+            <li class="fl"><a href="javascript:;">关于宜信</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="banner-s wrapper">
+        <img class="active-img-block" src="images/1-150Q4164R10-L.jpg" alt=""/>
+        <img src="images/1-150R51501250-L.jpg" alt=""/>
+        <img src="images/1-150Z61P1010-L.jpg" alt=""/>
+        <img src="images/1-15091QA1280-L.png" alt=""/>
+        <img src="images/1-1509141K1230-L.jpg" alt=""/>
+        <img src="images/13-150I0113614519.jpg" alt=""/>
+    </div>
+    <p class="clearFix">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </p>
+</div>
+<div class="bg">
+	<ul class="wrapper clearFix">
+    	<li class="fl">
+            <p class="clearFix">
+            	<span class="fl active"></span>
+                <span class="fl"></span>
+                <span class="fl"></span>
+            </p>
+            <div class="bg-img">
+                <a href="javascript:;"><img class="bg-block" src="images/13-150P4101JY63.png" alt=""/></a>
+                <a href="javascript:;"><img src="images/13-150P4101124B0.jpg" alt=""/></a>
+                <a href="javascript:;"><img src="images/13-150P41025211M.png" alt=""/></a>
+            </div>
+        </li>
+        <li class="fl">
+        	<div class="bg-t clearFix">
+                <h1 class="fl"><span>财富</span><b>管理</b></h1>
+                <a href="javascript:;" class="fr">more</a>
+            </div>
+            <div class="bg-s clearFix">
+            	<a href="javascript:;"><img class="fl" src="images/13-150P410333I51.png" alt=""/></a>
+                <div class="fl bg-s-r">
+                	<h4><a href="javascript:;">宜信财富2015财富论坛</a></h4>
+                    <span><a href="javascript:;">4月25日，宜信财富主办的“2015中国财富管理系列论坛”</a></span>
+                </div>
+            </div>
+            <div class="bg-s clearFix">
+            	<a href="javascript:;"><img class="fl" src="images/13-150I016150KJ.png" alt=""/></a>
+                <div class="fl bg-s-r">
+                	<h4><a href="javascript:;">九年宜信【为你写诗】</a></h4>
+                    <span><a href="javascript:;">4月25日，宜信财富主办的“2015中国财富管理系列论坛”</a></span>
+                </div>
+            </div>
+        </li>
+        <li class="fl">
+        	<div class="bg-t clearFix">
+                <h1 class="fl"><span>惠普</span><b>金融</b></h1>
+                <a href="javascript:;" class="fr">more</a>
+            </div>
+            <div class="bg-l clearFix">
+            	<a href="javascript:;"><img class="fl" src="images/13-150I0163554221.png" alt=""/></a>
+                <div class="fl bg-bt">
+                	<h3>宜信开启”敢2“品牌营销活动</h3>
+                    <a href="javascript:;">宜信惠普首发 惠普金融</a>
+                    <a href="javascript:;">宜信惠普首发 惠普金融</a>
+                    <a href="javascript:;">宜信惠普首发 惠普金融</a>
+                </div>
+            </div>
+        </li>
+        <li class="fl list">
+        	<div class="bg-t clearFix">
+                <h1 class="fl">News & Notice</h1>
+                <a href="javascript:;" class="fr">more</a>
+            </div>
+            <div class="bg-n">
+            	<i><a href="javascript:;">声明</a></i>
+                <i><a href="javascript:;">九年宜信推出”少年宜信“品牌</a></i>
+            </div>
+            <div class="bg-b clearFix">
+            	<a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+            </div>
+            <div class="bg-b clearFix">
+            	<a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_8.jpg" alt="" /></a>
+            </div>
+            <div class="bg-b cl clearFix">
+            	<a href="javascript:;"><img src="images/cyy_7.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_7.jpg" alt="" /></a>
+                <a href="javascript:;"><img src="images/cyy_7.jpg" alt="" /></a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="food">
+	<div class="food-s wrapper clearFix">
+        <a class="fl" href="javascript:;"><img src="images/footer.jpg" alt="" /></a>
+        <div class="fl food-t">
+            <ul class="clearFix">
+                <li class="fl"><a href="javascript:;">官方微博</a></li>   
+                <li class="fl"><a href="javascript:;">招贤纳士</a></li> 
+                <li class="fl"><a href="javascript:;">联系我们</a></li> 
+                <li class="fl"><a href="javascript:;">关于宜信</a></li> 
+                <li class="fl"><a class="bdnone" href="javascript:;">全国免费咨询电话；400-6099-800（财富管理）400-6099-600（惠普金融）</a></li>     
+            </ul>
+            <p>版权所有 普信科技发展（北京）有限公司<img src="images/21.gif" alt="" /></p>
+        </div>
+    </div>
+</div>
+<div class="tfood"></div>
+<div class="pos">
+	<img src="images/feedbackbtn01.gif" alt="" />
+</div>
+<div class="posnone">
+	<p>×</p>
+</div>
+</body>
+</html>

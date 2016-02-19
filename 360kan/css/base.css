@@ -1,0 +1,27 @@
+@charset="utf-8";
+body{
+	font: 14px 'Microsoft Yahei';
+	color: #333;
+}
+ul,ol,dl,dd,p,h1,h2,h3,body{
+	margin:0;
+}
+ul,ol{
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img,input{
+	border:none;
+}
+input{
+	outline: none;
+}
+.wrap{
+	width: 1240px;
+	margin: 0 auto;
+}

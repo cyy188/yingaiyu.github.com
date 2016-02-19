@@ -1,0 +1,68 @@
+*{ margin:0; padding:0; }
+ul,ol{ list-style:none;}
+a{ color:#666; text-decoration:none;}
+a img{ border:0; vertical-align:top; }
+i,em{ font-style:normal; }
+b,strong{ font-weight:normal; }
+input,textarea{ outline:none; }
+img,input,select,textarea{ vertical-align:top; }
+textarea{resize:none;}
+
+.fl{ float:left;display:inline;}
+.fr{ float:right;display:inline;}
+.clearFix:after{ display:block; content:''; clear:both;}
+.clearFix{ zoom:1;}
+
+html{ font-size:20px; }
+.warp{ width:15.2rem; margin:0 auto; }
+header{ height:2.225rem; width:16rem; background:#262626;  position:relative; top:0; left:0; }
+header span{ position:absolute; top:0.4rem; left:0.4rem; background:url(img/guokr_03.jpg) no-repeat;width:1.6rem; height:1.4rem; background-size:100%; }
+header strong{ position:absolute; top:0.5rem; right:0.4rem; background:url(img/guokr_06.jpg) no-repeat; width:1.45rem; height:1.2rem; background-size:100%; }
+header p{ height:100%; line-height:2.225rem; text-align:center; font-size:0.95rem; }
+header p a{ color:#fff; }
+header em{ display:block; background:url(img/1.png) repeat; height:0.125rem; width:16rem; }
+
+nav{ height:1.25rem; width:16rem; padding:0.475rem 0 0.35rem 0; background:#fafafa; }
+nav ul{ display:-webkit-flex; display:flex; }
+nav ul li { flex:1; -webkit-flex:1; text-align:center; position:relative; top:0; left:0; }
+nav ul li a{ display:block; width:100%; }
+nav ul li.on{ border-right:0.05rem solid #ccc; }
+nav ul li span{ position:absolute; top:0; left:0.5rem; display:inline-block; background:url(img/guokr_11.jpg) no-repeat; height:1.2rem; width:1.2rem; background-size:100%; }
+nav ul li strong{ position:absolute; top:0; left:0.5rem; display:inline-block; background:url(img/guokr_13.jpg) no-repeat; height:1.2rem; width:1.2rem; background-size:100%; }
+nav ul li em{ display:inline-block; height:1.25rem; line-height:1.25rem; }
+
+.banner{ height:7.8rem; width:16rem; }
+.banner img{ height:100%; width:100%; }
+
+.consection{ width:16rem; }
+.consection ul li{ height:2rem; width:14.85rem; line-height:2rem; border-bottom:0.05rem solid #ccc; font-size:0.75rem; padding-left:0.35rem; }
+.consection ul li a{ color:#393939;  }
+
+.newsection{ width:16rem; margin-top:-0.05rem; }
+.newsection ul li span{ display:block; background:url(img/1.png) repeat; height:0.125rem; width:16rem; }
+.new_t{ height:2rem; width:16rem; background:#fafafa; line-height:2rem; border-bottom:0.05rem solid #e8e8e8; }
+.new_t h3{ margin-left:0.4rem; }
+.new_t img{ height:1.5rem; width:1.5rem; margin-right:0.4rem; margin-top:0.2rem; }
+.new_c{ height:2.05rem; width:16rem; border-bottom:0.05rem solid #ededed; }
+.new_c ul{ height:2.05rem; line-height:2.05rem; }
+.new_c ul li{ margin-right:1.55rem;  }
+.new_c ul li a{ color:#010101; }
+.new_b h3{ height:2rem; line-height:2rem; font-size:0.75rem; }
+.new_b .new_content a{ display:block; height:4.625rem; width:15.2rem; }
+.new_b .new_content img{ height:3.7rem; width:5.17rem; }
+.new_b .new_content p{ font-size:0.65rem; width:9.05rem; margin-left:0.65rem; height:4.625rem; line-height:1.25rem; }
+.new_b ul{ height:8.075rem; }
+.new_b ul li{ height:2rem; border-top:0.05rem solid #ccc; line-height:2rem; }
+.new_b ul li a{ display:block; height:2rem; border-top:0.05rem solid #ccc; font-size:0.75rem; }
+
+footer{ height:6.875rem; }
+footer .move{ height:3rem; width:16rem; background:#fafafa; }
+footer .move a{ display:block; height:3rem; width:16rem; text-align:center; line-height:3rem; }
+footer .move img{ margin-top:0.7rem; width:1.45rem; height:1.45rem;}
+footer .foot{ height:3.875rem; }
+footer .foot span{ display:block; height:0.125rem; width:16rem; background:url(img/1.png) repeat; }
+footer .foot div{ height:2rem; width:16rem; background:#262626; padding:0.875rem 0; display:-webkit-flex; display:flex; }
+footer .foot div strong{ display:inline-block; flex:1; -webkit-flex:1; text-align:center; line-height:2rem; font-size:0.7rem; }
+footer .foot div strong img{ width:1.45rem; height:1.15rem; margin-top:0.5rem; }
+footer .foot div strong img.on{ width:0.85em; height:1.15rem; }
+footer .foot div strong.on{ border-right:0.05rem solid #676767; }

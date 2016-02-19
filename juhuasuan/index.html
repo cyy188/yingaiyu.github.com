@@ -1,0 +1,399 @@
+<!-- code by 崔营营 -->    	
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="description" content="网页描述" />
+<meta name="Keywords" content="关键字" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" href="index.css">
+<script>
+window.onload=window.onresize=function(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth*20/320+'px';
+	var oUl = document.querySelector('.banner ul');
+	var aLi = oUl.children;
+	oUl.style.width = aLi.length*aLi[0].offsetWidth/20+'rem';
+};
+document.addEventListener('DOMContentLoaded',function(){
+	var oBanner = document.querySelector('.banner');
+	var oUl = document.querySelector('.banner ul');
+	// var oOl = document.querySelector('.banner ol');
+	var aLi = oUl.children;
+	// var aBtn = oOl.children;
+	var x = 0;
+	var r = 50;
+	var iNow = 0;
+	oUl.addEventListener('touchstart',function(ev){
+		var downX = ev.targetTouches[0].pageX;
+		var disX = ev.targetTouches[0].pageX-x;
+		oUl.style.WebkitTransition='none';
+		function fnMove(ev){
+			x = ev.targetTouches[0].pageX-disX;
+			oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+		}
+		function fnEnd(ev){
+			oUl.removeEventListener('touchmove',fnMove,false);
+			oUl.removeEventListener('touchend',fnEnd,false);
+			oUl.style.WebkitTransition='.4s all ease';
+			
+			if(Math.abs(ev.changedTouches[0].pageX-downX)>r){
+				if(ev.changedTouches[0].pageX>downX){
+					iNow--;
+					if(iNow<0){
+						iNow=0;
+					}
+				}else{
+					iNow++;
+					if(iNow==aLi.length){
+						iNow=aLi.length-1;
+					}
+				}
+				x = -iNow*aLi[0].offsetWidth;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+			}else{
+				x = iNow*aLi[0].offsetWidth;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+			}
+			
+		}
+		oUl.addEventListener('touchmove',fnMove,false);
+		oUl.addEventListener('touchend',fnEnd,false);
+		ev.preventDefault();
+	},false);
+},false);
+</script>
+</head>
+<body>
+<div class="box">
+	<header>
+		<a href="javascript:;" class="back">返回</a>
+		<img src="img/header_bg.png" alt="聚划算" />
+	</header>
+	<div class="banner">
+	 	<ul>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+			<li><a href="javascript:;"><img src="img/banner.jpg" /></a></li>
+		</ul>
+		<!-- <ol>
+			<li class="active">0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol> -->
+	 </div>
+	 <nav class="warp">
+	 	<ul class="ul1">
+	 		<li class="li1">
+	 			<a class="a1" href="javascript:;"></a>
+	 			<span>商品</span>
+	 		</li>
+	 		<li class="li2">
+	 			<a class="a2" href="javascript:;"></a>
+	 			<span>生活</span>
+	 		</li>
+	 		<li class="li3">
+	 			<a class="a3" href="javascript:;"></a>
+				<span>品牌</span>
+	 		</li>
+	 		<li class="li4">
+	 			<a class="a4" href="javascript:;"></a>
+				<span>聚宝盆</span>
+	 		</li>
+	 	</ul>
+	 	<ul class="ul2">
+	 		<li class="li1">
+	 			<a class="a1" href="javascript:;"></a>
+	 			<span>聚名品</span>
+	 		</li>
+	 		<li class="li2">
+	 			<a class="a2" href="javascript:;"></a>
+	 			<span>聚家装</span>
+	 		</li>
+	 		<li class="li3">
+	 			<a class="a3" href="javascript:;"></a>
+				<span>聚透</span>
+	 		</li>
+	 		<li class="li4">
+	 			<a class="a4" href="javascript:;"></a>
+				<span>客户端</span>
+	 		</li>
+	 	</ul>
+	 </nav>
+	<section class="hot warp">
+		<div class="hot_head">
+			<h3>聚划算热卖排行</h3>
+			<p></p>
+		</div>
+		<ul>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h1">1</h2>
+					<img  class="fl" src="img/cyy-1.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 51  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h2">2</h2>
+					<img  class="fl" src="img/cyy-2.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 51  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h3">3</h2>
+					<img  class="fl" src="img/cyy-3.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 88  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h4">4</h2>
+					<img  class="fl" src="img/cyy-4.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 289  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h5">5</h2>
+					<img  class="fl" src="img/cyy-5.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 51  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h6">6</h2>
+					<img  class="fl" src="img/cyy-6.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 51  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h7">7</h2>
+					<img  class="fl" src="img/cyy-7.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 289  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h8">8</h2>
+					<img  class="fl" src="img/cyy-9.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 289  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h9">9</h2>
+					<img  class="fl" src="img/cyy-10.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 88  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="clearFix">
+					<h2 class="fl h10">10</h2>
+					<img  class="fl" src="img/cyy-8.jpg" alt="">
+					<div class="fl clearFix">
+						<p class="fl">
+							<span>已售68423</span>
+							<span>2.3折     ¥<i>299</i></span>
+						</p>
+						<strong class="fr">¥ 289  <em>></em></strong>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="sptuan warp">
+		<a href="javascript:;">更多精彩  逛起来！</a>
+	</section>
+	<section class="shtuan warp">
+		<ul>
+			<li>
+				<div class="shtuan_t celarFix">
+					<p class="fl p1">商品团<span></span></p>
+					<ul class="fr clearFix">
+						<li class="fl"><a class="active" href="javascript:;">服饰</a></li>
+						<li class="fl"><a href="javascript:;">配饰</a></li>
+						<li class="fl"><a href="javascript:;">美妆</a></li>
+						<li class="fl"><a href="javascript:;">鞋包</a></li>
+						<li class="fl"><a href="javascript:;">食品</a></li>
+						<li class="fl"><a class="active" href="javascript:;">家居</a></li>
+						<li class="fl"><a href="javascript:;">运动</a></li>
+						<li class="fl"><a class="active" href="javascript:;">电器</a></li>
+						<li class="fl"><a href="javascript:;">百货</a></li>
+						<li class="fl"><a href="javascript:;">母婴</a></li>
+						<li class="fl"><a href="javascript:;">数码</a></li>
+						<li class="fl"><a href="javascript:;">更多</a></li>
+					</ul>
+				</div>
+				<div class="shtuan_b">
+					<a href="javascript:;">精彩商品  逛起来！<i>></i></a>
+				</div>
+			</li>
+			<li>
+				<div class="shtuan_t celarFix">
+					<p class="fl p2">生活团<span></span></p>
+					<ul class="fr clearFix">
+						<li class="fl"><a class="active" href="javascript:;">美食</a></li>
+						<li class="fl"><a href="javascript:;">教育</a></li>
+						<li class="fl"><a href="javascript:;">酒店</a></li>
+						<li class="fl"><a href="javascript:;">电影</a></li>
+						<li class="fl"><a href="javascript:;">生活服务</a></li>
+						<li class="fl"><a class="active" href="javascript:;">卡劵</a></li>
+						<li class="fl"><a href="javascript:;">摄影</a></li>
+						<li class="fl"><a class="active" href="javascript:;">粮油生鲜</a></li>
+						<li class="fl"><a href="javascript:;">门票</a></li>
+						<li class="fl"><a href="javascript:;">休闲娱乐</a></li>
+						<li class="fl"><a href="javascript:;"></a></li>
+						<li class="fl"><a href="javascript:;"></a></li>
+					</ul>
+				</div>
+				<div class="shtuan_b">
+					<a href="javascript:;">品质生活  逛起来！<i>></i></a>
+				</div>
+			</li>
+			<li>
+				<div class="shtuan_t celarFix">
+					<p class="fl p3">品牌团<span></span></p>
+					<ul class="fr clearFix">
+						<li class="fl"><a class="active" href="javascript:;">七品狼</a></li>
+						<li class="fl"><a href="javascript:;">达芙妮</a></li>
+						<li class="fl"><a href="javascript:;">卓诗尼</a></li>
+						<li class="fl"><a href="javascript:;">收纳博士</a></li>
+						<li class="fl"><a href="javascript:;">惠氏</a></li>
+						<li class="fl"><a class="active" href="javascript:;">夏乐</a></li>
+						<li class="fl"><a href="javascript:;">帕克伦</a></li>
+						<li class="fl"><a class="active" href="javascript:;">古今</a></li>
+						<li class="fl"><a href="javascript:;">九牧</a></li>
+						<li class="fl"><a href="javascript:;">诺奥</a></li>
+						<li class="fl"><a href="javascript:;">红豆</a></li>
+						<li class="fl"><a href="javascript:;">曼秀雷敦</a></li>
+					</ul>
+				</div>
+				<div class="shtuan_b">
+					<a href="javascript:;"><span>精彩商品  逛起来！</span><i>></i></a>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="pptuan warp">
+		<ul>
+			<li>
+				<a href="javascript:;">
+					<span class="s1"></span>
+					<p>iOS客户端</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="s2"></span>
+					<p>安卓客户端</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<span class="s3"></span>
+					<p>iOS客户端</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="dowload warp clearFix">
+		<div class="fl">
+			<a href="javascript:;">登陆</a>
+		</div>
+		<div class="fl">
+			<a href="javascript:;">注册</a>
+		</div>
+		<p class="fr">
+			<a href="javascript:;"><em>TOP</em><i></i></a>
+		</p>
+	</section>
+	<footer class="warp">
+		<div class="footer">
+			<div class="footer_t">
+				<p>
+					<a href="javascript:;">标准版</a>
+					<a href="javascript:;">电脑版</a>
+				</p>
+				<span>2013 浙B2-10080203   服务中心</span>
+			</div>
+			<div class="footer_c">
+				<img src="img/biao1.png" alt="">
+				<div>
+					<p>先点<a href="javascript:;"></a></p>
+					<p>再“添加到主屏幕”</p>
+				</div>
+			</div>
+			<div class="footer_bg"></div>
+		</div>
+		<ul class="footer_b">
+			<li><img src="img/cyy_1.png" alt=""></li>
+			<li><img src="img/biao2.png" alt=""></li>
+			<li><img src="img/biao3.png" alt=""></li>
+			<li><img src="img/biao4.png" alt=""></li>
+			<li><img src="img/biao5.png" alt=""></li>
+		</ul>
+		
+	</footer>
+</div>
+</body>
+</html>

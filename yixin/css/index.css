@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.head .head-s{margin-top:19px;height:86px;}
+.head .head-s p{text-indent:-9999em;}
+.head .head-s p a{background:url(../images/logo.jpg) no-repeat;height:49px;width:207px;display:block;}
+.head .head-s ul{margin-top:42px;margin-bottom:6px;font-size:12px;}
+.head .head-s ul li a{color:#696969;padding:0 10px 0 9px;}
+.head .head-s ul li a.active{color:#5cb2f4;}
+.head .head-s ul span{border-right:1px solid #c5c5c5;height:9px;margin-top:1px;}
+
+.nvs{height:32px;}
+.nvs ul{height:32px;overflow:hidden;}
+.nvs ul li{width:182px;height:32px;background:#004ea1;margin-right:1px;}
+.nvs ul li a{display:block;width:152px;height:32px;color:#fff;font-size:15px;line-height:32px;padding-left:30px;}
+.nvs ul .active{background:#989a9f;}
+<!--.nvs ul li:hover{background:#989a9f;}-->
+.nvs ul{ position:relative; }
+.nvs ul li .list-pos{ position:absolute; top:32px; left:0; width:1100px;height:30px;line-height:30px;background:red; }
+
+.banner{background:url(../images/cyy_2.png);height:453px;overflow:hidden;position:relative;}
+.banner .banner-s{height:453px;}
+.banner .banner-s img{margin-top:31px; display:none;}
+.banner .banner-s img.active-img-block{ display:block;}
+.banner p{width:102px;height:11px;position:absolute;bottom:20px;left:50%;margin-left:-51px;}
+.banner p span{height:11px;width:11px;background:#fff;display:block;margin-right:6px;float:left;border-radius:50%;}
+.banner p .active{background:#5cb2f4;}
+
+.bg{height:284px;}
+.bg ul li{width:273px;height:217px;border-left:1px solid #eaeaea;}
+.bg ul li p{width:45px;height:9px;margin:32px 11px 10px 217px;}
+.bg ul li p span{background:url(../images/cyy_3.png) no-repeat;width:9px;height:9px;margin-right:6px;}
+.bg ul li p .active{background:url(../images/cyy_4.png) no-repeat;height:9px;}
+.bg ul li .bg-img{width:243px;height:128px;overflow:hidden;}
+.bg ul li .bg-img img{width:243px;height:128px;margin-left:16px;display:none;}
+.bg ul li .bg-img .bg-block{display:block;}
+.bg ul li .bg-t{margin-top:30px;height:17px;margin-bottom:10px;}
+.bg ul li .bg-t a{height:22px;margin-right:16px;background:url(../images/cyy_5.png) no-repeat right;padding-right:10px;color:#333;}
+.bg ul li .bg-t h1{font-size:17px;margin-left:15px;}
+.bg ul li .bg-t h1 span{color:#2ca6e0;}
+.bg ul li .bg-t h1 b{color:#464646;}
+.bg ul li .bg-s{margin-bottom:10px;height:64px}
+.bg ul li .bg-s img{width:83px;height:56px;margin-left:15px;margin-right:14px;}
+.bg ul li .bg-s .bg-s-r{width:141px;padding-right:20px;}
+.bg ul li .bg-s .bg-s-r h4{font-size:12px;margin-bottom:7px;}
+.bg ul li .bg-s .bg-s-r h4 a{color:#5b502d;}
+.bg ul li .bg-s .bg-s-r span{font-size:12px;}
+.bg ul li .bg-s .bg-s-r span a{color:#868686;}
+.bg ul li .bg-s .bg-s-r span a.active{color:#5b502d;}
+.bg ul li .bg-l img{width:112px;height:129px;}
+.bg ul li .bg-l .bg-bt{margin-right:21px;width:140px;color:#5b502d;}
+.bg ul li .bg-l .bg-bt h3{margin-bottom:34px;height:12px;font-size:12px;}
+.bg ul li .bg-l .bg-bt a{color:#717171;font-size:12px;height:20px;line-height:24px;}
+.bg ul li .bg-l .bg-bt a.active{color:#5b502d;}
+.bg ul .list{height:284px;width:275px;border-right:1px solid #ccc;}
+.bg ul .list .bg-n{padding-top:10px;}
+.bg ul .list .bg-n i{display:block;margin-left:15px;background:url(../images/cyy_6.png) no-repeat 0;padding-left:10px;font-size:12px;}
+.bg ul .list .bg-n i a{color:#717171;height:24px;line-height:24px;}
+.bg ul .list .bg-n i a.active{color:#5b502d;}
+.bg ul .list .bg-b{padding-left:15px;margin-top:15px;}
+.bg ul .list .bg-b a{display:block;float:left;margin-right:8px;width:72px;height:35px;text-align:center;}
+
+.food{background:#f7f7f7;height:78px;border-bottom:2px solid #fff;}
+.food .food-s a img{margin:21px 31px 26px 31px;}
+.food .food-s .food-t{margin-top:20px;}
+.food .food-s .food-t ul li{font-size:12px;}
+.food .food-s .food-t ul li a{color:#9c9c9c;border-right:1px solid #ccc;padding:0 10px;}
+.food .food-s .food-t ul li a.active{color:#5b502d;}
+.food .food-s .food-t ul li .bdnone{border:none;}
+.food .food-s .food-t p{font-size:12px;color:#9c9c9c;padding-left:10px;}
+
+.tfood{background:#d1d1d1;height:5px;}
+
+.body{position:relative;}
+.pos img{position:fixed;top:200px;left:1225px;cursor: pointer;}
+.posnone{width:400px;height:500px;background:#ccc;position:fixed;top:50%;left:50%;margin-top:-200px;margin-left:-250px;display:none;z-index:10;}
+<!--.posnone p{position:absolute;right:0;top:0;}-->
+.posnone.pos-block{display:block;}
+
+
+
+
+
+

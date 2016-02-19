@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/commmon.css"rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var wh=$(window).height();
+		$(window).scroll(function(){
+			var s=$(window).scrollTop();
+			if(s>=300){
+				$(".pos").show();
+			}else if(s<=300){
+				$(".pos").hide();
+			}
+		});
+		$('.a2').click(function (){
+			$('.tt').css("display","block");
+		});
+		$('.out').click(function(){
+			$(".tt").css("display","none");
+		});
+		
+		$(".btt-c").mouseover(function(){
+			$(".btt-b").css("display","block")	
+		})
+		$(".btt-c").mouseout(function(){
+			$(".btt-b").css("display","none")	
+		})
+		$(".btt-b").mouseover(function(){
+			$(".btt-b").css("display","block")	
+		})
+		$(".btt-b").mouseout(function(){
+			$(".btt-b").css("display","none")	
+		})
+		
+		$('.a1').click(function (){
+			$('.fix').css("display","block");
+		});
+		$('.out').click(function(){
+			$(".fix").css("display","none");
+		});
+	})
+</script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-bg">
+            <div class="top-pos">
+            	<div class="top-h wrapper clearFix">
+                    <div class="top-h-r clearFix fl">
+                        <h1 class="fl"><a href="javascript:;">花瓣</a></h1>
+                        <div class="top-h-r-s fl">
+                            <a class="active" href="javascript:;">发现</a>
+                            <a href="javascript:;">最新</a>
+                        </div>
+                        <div class="top-h-r-r">
+                        	<div class="top-h-pos">
+                            	<div class="top-h-pos-h"></div>
+                            	<div class="top-h-pos-t clearFix">
+                                	<a href="javascript:;"><b>移动应用</b></a>
+                                    <a href="javascript:;"><b>采集工具</b></a>
+                                </div>
+                                <div class="top-h-pos-c clearFix">
+                                	<div class="top-h-pos-c-r fl">
+                                    	<a href="javascript:;">平面设计</a>
+                                        <a href="javascript:;">UI/UX</a>
+                                        <a href="javascript:;">插画/漫画</a>
+                                        <a href="javascript:;">服装</a>
+                                        <a href="javascript:;">家居</a>
+                                        <a href="javascript:;">婚礼</a>
+                                    </div>
+                                    <div class="top-h-pos-c-l fl">
+                                    	<a href="javascript:;">造型/美妆/纹身</a>
+                                        <a href="javascript:;">礼物</a>
+                                        <a href="javascript:;">搭配</a>
+                                        <a href="javascript:;">摄影</a>
+                                        <a href="javascript:;">游戏</a>
+                                    </div>
+                                </div>
+                                <div class="top-h-pos-b">
+                                	<a href="javascript:;"><b>所有分类》</b></a>
+                                </div>
+                                <div class="top-h-pos-f">
+                                	<p></p>
+                                	<a href="javascript:;">活动</a>
+                                    <a href="javascript:;">周刊</a>
+                                    <a href="javascript:;">反馈</a>
+                                    <a href="javascript:;">关于</a>
+                                    <a href="javascript:;">博客</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-h-l fr">
+                    	<a class="a1" href="javascript:;">
+                            <span>注册</span>
+                        </a>
+                        <a class="a2" href="javascript:;">
+                            <span class="dl">登陆</span>
+                        </a>
+                    </div>
+                </div>
+            	<div class="top-t"></div>
+                <div class="top-c">
+                    <form class="clearFix">
+                        <input class="text fl" type="text" placeholder="输入你喜欢的" />
+                        <a href="javascript:;" class="search-pos"></a>
+                    </form>
+                </div>
+                <div class="top-b">
+                	<span>热门搜索：</span>
+                    <a href="javascript:;">设计配色</a><span>，</span>
+                    <a href="javascript:;">可爱小花童</a><span>，</span>
+                    <a href="javascript:;">中式婚礼</a><span>，</span>
+                    <a href="javascript:;">婚礼请柬这样设计</a><span>，</span>
+                    <a href="javascript:;">花瓣市集</a><span>，</span>
+                </div>
+            </div> 
+        </div>  
+    </div>
+    
+    <div class="bd clearFix wrapper">
+    	<div class="bd-r fl"></div>
+        <div class="bd-c fl">
+        	<a href="javascript:;">大家正在关注</a>
+        </div>
+        <div class="bd-l fl"></div>
+    </div>
+    
+    <div class="banner wrapper">
+    	<a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_1.jpg" alt="" />
+                </div>
+                <div>针织外套</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_2.jpg" alt="" />
+                </div>
+                <div>版面设计</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_3.jpg" alt="" />
+                </div>
+                <div>商业海报</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_4.jpg" alt="" />
+                </div>
+                <div>森系婚礼</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_5.jpg" alt="" />
+                </div>
+                <div>婚礼蛋糕</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_6.png" alt="" />
+                </div>
+                <div>时间轴设计</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="clearFix">
+        	<div class="fl banner-s">
+                <div class="banner-s-s">
+                	<img src="images/attention_7.jpg" alt="" />
+                </div>
+                <div>眼睛</div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="bd clearFix wrapper">
+    	<div class="bd-r fl"></div>
+        <div class="bd-c fl">
+        	<a href="javascript:;">为您推荐</a>
+        </div>
+        <div class="bd-l fl"></div>
+    </div>
+   
+    <div class="nav wrapper">
+    	<ul class="nav-s clearFix wrapper">
+            <li class="fl">
+                <a class="nav-bd" href="javascript:;">
+                    <img src="images/cyy_14.jpg" alt="" />
+                </a>
+                <a class="nav-bg" href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-l fl">
+                        <div class="nav-pos-s"></div>
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-r fr">
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_15.jpg" alt="" />
+                </a>
+            </li>
+             <li class="fl">
+                <a class="nav-bd" href="javascript:;">
+                    <img src="images/cyy_9.png" alt="" />
+                </a>
+                <a class="nav-bg" href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_11.jpg" alt="" />
+                </a>
+            </li>
+             <li class="fl">
+                <a class="nav-bd" href="javascript:;">
+                    <img src="images/cyy_12.jpg" alt="" />
+                </a>
+                <a class="nav-bg" href="javascript:;"></a>
+            </li>
+            <li class="fl">
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-l fl">
+                        <div class="nav-pos-s"></div>
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-r fr">
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_27.jpg" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_8.jpg" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-l fl">
+                        <div class="nav-pos-s"></div>
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-r fr">
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="fl">
+                <a class="nav-bd" href="javascript:;">
+                    <img src="images/cyy_25.jpg" alt="" />
+                </a>
+                <a class="nav-bg" href="javascript:;"></a>
+            </li>
+             <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy24.jpg" alt="" />
+                </a>
+            </li>
+             <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy23.jpg" alt="" />
+                </a>
+            </li>
+             <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_22.png" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-l fl">
+                        <div class="nav-pos-s"></div>
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-r fr">
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_21.jpg" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_20.png" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-l fl">
+                        <div class="nav-pos-s"></div>
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+                <div class="nav-pos clearFix">
+                    <div class="nav-pos-r fr">
+                        <div class="nav-s-s"></div>
+                        <a href="javascript:;"><p>白幽游</p></a>
+                        <p><span>25600采集</span><span>22575粉丝</span></p>
+                    </div>
+                </div>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_19.jpg" alt="" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">
+                    <img src="images/cyy_18.png" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="food wrapper clearFix">
+    	<div class="food-r fl"></div>
+        <div class="food-c fl">
+        	<div class="food-c-s">
+            	<a href="javascript:;">加载更多</a>
+            </div>
+        </div>
+        <div class="food-l fl"></div>
+    </div>
+    
+    <div class="tfooder wrapper">
+    	<div class="tfooder-top">
+        	<div class="tfooder-t-r clearFix">
+            	<p class="fl">以分类浏览花瓣</p>
+                <p class="fr">
+                    <a href="javascript:;">所有采集》</a>
+                </p>
+            </div>
+        </div>
+        <ul class="clearFix">
+            <li class="fl">
+                <a href="javascript:;">平面设计</a>
+                <a href="javascript:;">UI/UX</a>
+                <a href="javascript:;">插画/漫画</a>
+                <a href="javascript:;">服装</a>
+                <a href="javascript:;">家居</a>
+                <a href="javascript:;">婚礼</a>
+                <a href="javascript:;">造型/美妆/纹身</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">健身/美体/舞蹈</a>
+                <a href="javascript:;">旅游</a>
+                <a href="javascript:;">美食</a>
+                <a href="javascript:;">手工/布艺</a>
+                <a href="javascript:;">礼物</a>
+                <a href="javascript:;">搭配</a>
+                <a href="javascript:;">摄影</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">工业工业</a>
+                <a href="javascript:;">动漫</a>
+                <a href="javascript:;">建筑设计</a>
+                <a href="javascript:;">人文艺术</a>
+                <a href="javascript:;">数据图</a>
+                <a href="javascript:;">男士风尚</a>
+                <a href="javascript:;">游戏</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">极客</a>
+                <a href="javascript:;">汽车/摩托</a>
+                <a href="javascript:;">动物</a>
+                <a href="javascript:;">儿童</a>
+                <a href="javascript:;">美文/美图</a>
+                <a href="javascript:;">音乐/电影</a>
+                <a href="javascript:;">名人/明星</a>
+            </li>
+            <li class="fl">
+                <a href="javascript:;">生活百科</a>
+                <a href="javascript:;">教育</a>
+                <a href="javascript:;">体育运动</a>
+                <a href="javascript:;">美女</a>
+                <a href="javascript:;">搞笑图</a>
+                <a href="javascript:;">其他</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="btn"> 
+    	<div class="btn-s wrapper clearFix">
+        	<ul class="clearFix fl">
+            	<li class="fl">
+                	<h2>花瓣首页</h2>
+                	<a href="javascript:;">花瓣采集工具</a>
+                    <a href="javascript:;">花瓣官方博客</a>
+                </li>
+                <li class="fl">
+                	<h2>花瓣首页</h2>
+                	<a href="javascript:;">联系我们</a>
+                    <a href="javascript:;">用户反馈</a>
+                    <a href="javascript:;">花瓣 LOGO 标准文档</a>
+                </li>
+                <li class="fl">
+                	<h2>花瓣首页</h2>
+                	<a href="javascript:;">花瓣 iphone版</a>
+                    <a href="javascript:;">花瓣 android版</a>
+                    <a href="javascript:;">花瓣 HD版</a>
+                </li>
+            </ul>
+            <div class="fr btn-r">
+                <div class="btn-r-s">
+                	<h2>关注我们</h2>
+                    <a href="javascript:;">新浪微博：@花瓣网</a>
+                    <a href="javascript:;">官方QQ:188126952</a>
+                    <a class="a3" href="javascript:;">官方微信：<img src="images/about_footer_code.png" alt="" />
+                    	<div><img src="images/weixin_huaban.png" alt="" /></div>
+                    </a>
+                    <a href="javascript:;"><img src="images/sm_124x47.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pos clearFix">
+    	<div class="pos-s wrapper clearFix">
+            <div class="pos-l clearFix fl">
+                <h1 class="fl"><a href="javascript:;">花瓣</a></h1>
+                <div class="pos-l-s fl">
+                    <a class="active" href="javascript:;">发现</a>
+                    <a href="javascript:;">最新</a>
+                </div>
+                <div class="pos-l-s-s">
+                    <div class="top-h-pos">
+                        <div class="top-h-pos-h"></div>
+                        <div class="top-h-pos-t clearFix">
+                            <a href="javascript:;"><b>移动应用</b></a>
+                            <a href="javascript:;"><b>采集工具</b></a>
+                        </div>
+                        <div class="top-h-pos-c clearFix">
+                            <div class="top-h-pos-c-r fl">
+                                <a href="javascript:;">平面设计</a>
+                                <a href="javascript:;">UI/UX</a>
+                                <a href="javascript:;">插画/漫画</a>
+                                <a href="javascript:;">服装</a>
+                                <a href="javascript:;">家居</a>
+                                <a href="javascript:;">婚礼</a>
+                            </div>
+                            <div class="top-h-pos-c-l fl">
+                                <a href="javascript:;">造型/美妆/纹身</a>
+                                <a href="javascript:;">礼物</a>
+                                <a href="javascript:;">搭配</a>
+                                <a href="javascript:;">摄影</a>
+                                <a href="javascript:;">游戏</a>
+                            </div>
+                        </div>
+                        <div class="top-h-pos-b">
+                            <a href="javascript:;"><b>所有分类》</b></a>
+                        </div>
+                        <div class="top-h-pos-f">
+                            <p></p>
+                            <a href="javascript:;">活动</a>
+                            <a href="javascript:;">周刊</a>
+                            <a href="javascript:;">反馈</a>
+                            <a href="javascript:;">关于</a>
+                            <a href="javascript:;">博客</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pos-c fl">
+                <form class="clearFix">
+                    <input class="text fl" type="text" placeholder="输入你喜欢的" />
+                    <a href="javascript:;" class="search-pos"></a>
+                </form>
+            </div>
+            <div class="pos-h-l fr">
+                <a class="a1" href="javascript:;">
+                    <span>注册</span>
+                </a>
+                <a class="a2" href="javascript:;">
+                    <span class="span">登陆</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tt">
+        <div class="out">
+            <i class="outt"></i>
+        </div>
+        <div class="tt-s">
+            <h1></h1>
+        </div>
+        <div class="tt-c clearFix">
+            <p class="fl"></p>
+            <span class="fl">使用第三方登陆</span>
+            <p class="fr"></p>
+        </div>
+        <div class="tt-b">
+            <b class="b1"></b>
+            <b class="b2"></b>
+            <b class="b3"></b>
+            <b class="b4"></b>
+        </div>
+        <div class="tt-c clearFix">
+            <p class="fl"></p>
+            <span class="fl">使用邮箱登陆</span>
+            <p class="fr"></p>
+        </div>
+        <form>
+            <input type="text" placeholder="花瓣注册邮箱"/>
+            <input type="password" placeholder="密码"/>
+            <input class="f-but" type="button"  value="登陆" />
+        </form>
+    </div>
+    
+    <div class="btt">
+    	<a class="btt-s" href="#"><</a>
+        <a class="btt-c" href="javascript:;">+</a>
+        <div class="btt-b">
+            <a href="javascript:;">添加采集</a>
+            <a href="javascript:;">添加画板</a>
+            <a href="javascript:;">添加采集工具</a>
+        </div>
+    </div>
+    
+    <div class="fix">
+    	<div class="fix-t">
+        	<h1></h1>
+        </div>
+        <div class="fix-c clearFix">
+            <p class="fl"></p>
+            <span class="fl">使用第三方账号注册花瓣</span>
+            <p class="fr"></p>
+        </div>
+        <div class="fix-b">
+            <b class="b1"></b>
+            <b class="b2"></b>
+            <b class="b3"></b>
+            <b class="b4"></b>
+        </div>
+        <div class="fix-f">
+        	<a href="#">使用邮箱注册</a>
+        </div>
+        <div class="fix-tf fr">
+        	<span>已有账号？</span>
+            <a class="fix-tf-s" href="#">登陆到花瓣</a>
+        </div>
+        <div class="out">
+            <i class="outt"></i>
+        </div>
+    </div>
+</body>
+</html>
